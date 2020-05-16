@@ -1,7 +1,7 @@
 const navigation = {
   left: [
     {
-      title: "HomePage",
+      title: "Homepage",
       to: "/",
     },
     {

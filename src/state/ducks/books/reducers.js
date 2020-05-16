@@ -3,7 +3,6 @@ import * as Actions from "./types";
 const initialState = {
   data: [],
   loading: false,
-  filter: "",
 };
 
 const booksReducer = (state = initialState, action) => {
@@ -13,21 +12,16 @@ const booksReducer = (state = initialState, action) => {
         ...state,
         data: [...state.data, action.payload],
       };
-    case Actions.SET_BOOKS:
-      return {
-        ...state,
-        data: action.payload,
-        loading: false,
-      };
     case Actions.LOAD_BOOKS:
       return {
         ...state,
         loading: true,
       };
-    case Actions.SET_FILTER:
+    case Actions.SET_BOOKS:
       return {
         ...state,
-        filter: action.payload,
+        data: action.payload,
+        loading: false,
       };
     default:
       return state;

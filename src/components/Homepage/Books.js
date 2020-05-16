@@ -7,7 +7,7 @@ const Books = (props) => {
     <Row>
       {props.items.map((item) => {
         return (
-          <Col xs={3}>
+          <Col cs={3}>
             <Book {...item} />
           </Col>
         );

@@ -1,7 +1,10 @@
-const GET_BOOKS = "GET_BOOKS";
-const SET_BOOKS = "SET_BOOKS";
-const ADD_BOOK = "ADD_BOOK";
-const LOAD_BOOKS = "LOAD_BOOKS";
-const SET_FILTER = "SET_FILTER";
-
-export { GET_BOOKS, SET_BOOKS, ADD_BOOK, LOAD_BOOKS, SET_FILTER };
+export const SET_BOOKS = "SET_BOOKS";
+export const GET_BOOKS = "GET_BOOKS";
+export const ADD_BOOK = "ADD_BOOK";
+export const LOAD_BOOKS = "LOAD_BOOKS";
+export const SET_FILTER = "SET_FILTER";
+export const SEARCH_BOOKS = "SEARCH_BOOKS";
+export const SORT_BOOKS = "SORT_BOOKS";
+export const UPDATE_BOOK = "UPDATE_BOOK";
+export const DELETE_BOOK = "DELETE_BOOK";
+export const SET_VIEW = "SET_VIEW";

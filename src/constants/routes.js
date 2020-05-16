@@ -1,4 +1,4 @@
-import { Homepage, AddBook } from "./containers";
+import { Homepage, AddBook, ReadBooks } from "../containers";
 
 const routes = [
   {
@@ -6,6 +6,12 @@ const routes = [
     path: "/",
     exact: true,
     component: Homepage,
+  },
+  {
+    title: "Read Books",
+    path: "/read-books",
+    exact: false,
+    component: ReadBooks,
   },
   {
     title: "Add Book",

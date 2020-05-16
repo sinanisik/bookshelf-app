@@ -9,7 +9,6 @@ import {
   Button,
   CardLink,
 } from "reactstrap";
-
 import { StyledBookCard } from "./BookStyles";
 
 const Book = (props) => {
@@ -21,7 +20,8 @@ const Book = (props) => {
         <CardText>
           <strong>{`${rating} / 5`}</strong>
         </CardText>
-        <CardTitle>{title}</CardTitle>
+        <CardText>{title}</CardText>
+        <CardLink>Details</CardLink>
         <CardLink>Edit Book</CardLink>
       </CardBody>
     </StyledBookCard>

@@ -1,49 +1,49 @@
 import React from "react";
-import { Nav, NavItem, NavbarText } from "reactstrap";
-import { categories } from "../../constants";
+import {
+  Nav,
+  Container,
+  Row,
+  Col,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Input,
+} from "reactstrap";
 import { StyledNavbarText } from "./FilterSortBarStyles";
-import { connect } from "react-redux";
-import { setFilter } from "../../state/ducks/books/actions";
+import { categories } from "../../constants/constants";
 
 const FilterSortBar = (props) => {
   return (
     <div>
-      <Nav className="bg-white">
-        <NavbarText>
-          <strong>Categories:</strong>
-        </NavbarText>
-        <StyledNavbarText
-          active={!props.activeFilter}
-          onClick={() => {
-            props.setFilter("");
-          }}
-        >
-          All
-        </StyledNavbarText>
-        {categories.map((category) => {
-          return (
-            <StyledNavbarText
-              active={props.activeFilter === category}
-              onClick={() => {
-                props.setFilter(category);
-              }}
-            >
-              {category}
-            </StyledNavbarText>
-          );
-        })}
-      </Nav>
+      <Container fluid className="bg-white" style={{ padding: "15px" }}>
+        <Row>
+          <Col xs={6}>
+            <Nav className="bg-white">
+              <StyledNavbarText>
+                <strong>Categories:</strong>
+              </StyledNavbarText>
+              {categories.map((category) => {
+                return <StyledNavbarText>{category}</StyledNavbarText>;
+              })}
+            </Nav>
+          </Col>
+          <Col xs={6}>
+            <InputGroup>
+              <InputGroupAddon addonType="prepend">
+                <InputGroupText>Search by name</InputGroupText>
+              </InputGroupAddon>
+              <Input
+                onChange={(e) => {
+                  //e.target.value
+                  props.search(e.target.value);
+                }}
+              />
+            </InputGroup>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    activeFilter: state.books.filter,
-  };
-};
-const mapDispatchToProps = {
-  setFilter,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(FilterSortBar);
+export default FilterSortBar;

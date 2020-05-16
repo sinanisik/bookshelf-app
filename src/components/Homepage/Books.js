@@ -1,13 +1,13 @@
 import React from "react";
 import Book from "./Book";
-import { Row, Col } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 const Books = (props) => {
   return (
     <Row>
       {props.items.map((item) => {
         return (
-          <Col cs={3}>
+          <Col xs={props.view === "List" ? { size: 4, offset: 4 } : 3}>
             <Book {...item} />
           </Col>
         );

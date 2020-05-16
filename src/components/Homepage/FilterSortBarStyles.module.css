@@ -1,0 +1,27 @@
+*:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  outline-style: none;
+  border-color: transparent;
+}
+
+.view {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+a i {
+  color: #ff8247;
+  transition: all 0.3s ease 0s;
+  transition-duration: 0.2s;
+}
+
+i:hover {
+  color: #ff6b25;
+  box-shadow: 3px 5px 5px #ffa57a;
+}
+
+i:active {
+  transform: translateY(6px);
+}

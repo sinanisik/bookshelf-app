@@ -1,23 +1,38 @@
-import { Homepage, AddBook, ReadBooks } from "../containers";
+import React from "react";
+import { Homepage, AddBook } from "../containers";
 
 const routes = [
   {
     title: "Home Page",
     path: "/",
     exact: true,
+    componentProps: {},
     component: Homepage,
-  },
-  {
-    title: "Read Books",
-    path: "/read-books",
-    exact: false,
-    component: ReadBooks,
   },
   {
     title: "Add Book",
     path: "/add-book",
     exact: false,
+    componentProps: {},
     component: AddBook,
+  },
+  {
+    title: "Edit Book",
+    path: "/edit-book/:id",
+    exact: false,
+    componentProps: {
+      isEdit: true,
+    },
+    component: AddBook,
+  },
+  {
+    title: "Read Books",
+    path: "/read-books",
+    exact: false,
+    componentProps: {
+      isReadBooks: true,
+    },
+    component: Homepage,
   },
 ];
 

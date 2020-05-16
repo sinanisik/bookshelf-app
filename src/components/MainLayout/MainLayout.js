@@ -7,12 +7,20 @@ class MainLayout extends Component {
   }
 
   componentDidMount() {
-    document.title = this.props.title;
+    const title = this.props.title;
+    document.title = title;
   }
 
   render() {
     const Children = this.props.children;
-    return <Children />;
+    return (
+      <div>
+        <Children
+          routerProps={this.props.routerProps}
+          componentProps={this.props.componentProps}
+        />
+      </div>
+    );
   }
 }
 

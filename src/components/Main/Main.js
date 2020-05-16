@@ -1,6 +1,6 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 import routes from "../../constants/routes";
-import { Switch, Route } from "react-router-dom";
 import { MainLayout } from "../../components";
 
 const Main = () => {
@@ -14,7 +14,15 @@ const Main = () => {
               exact={route.exact}
               component={(props) => {
                 const Comp = route.component;
-                return <MainLayout title={route.title}>{Comp}</MainLayout>;
+                return (
+                  <MainLayout
+                    title={route.title}
+                    routerProps={props}
+                    componentProps={route.componentProps}
+                  >
+                    {Comp}
+                  </MainLayout>
+                );
               }}
             />
           );

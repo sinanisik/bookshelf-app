@@ -7,17 +7,13 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText,
 } from "reactstrap";
-
 import { Link } from "react-router-dom";
+import { StyledNavItem, StyledNavbarText } from "./HeaderStyles";
 import navigation from "../../../constants/navigation";
 
-const NavigationBar = (props) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -33,21 +29,21 @@ const NavigationBar = (props) => {
           <Nav className="mr-auto" navbar>
             {navigation.left.map((nav) => {
               return (
-                <NavItem>
+                <StyledNavItem>
                   <NavLink tag={Link} to={nav.to}>
                     {nav.title}
                   </NavLink>
-                </NavItem>
+                </StyledNavItem>
               );
             })}
           </Nav>
           {navigation.right.map((nav) => {
             return (
-              <NavbarText>
+              <StyledNavbarText>
                 <NavLink tag={Link} to={nav.to}>
                   {nav.title}
                 </NavLink>
-              </NavbarText>
+              </StyledNavbarText>
             );
           })}
         </Collapse>
@@ -56,4 +52,4 @@ const NavigationBar = (props) => {
   );
 };
 
-export default NavigationBar;
+export default Header;

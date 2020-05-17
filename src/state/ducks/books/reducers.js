@@ -65,16 +65,4 @@ const booksReducer = (state = initialState, action) => {
   }
 };
 
-export const selectFilteredBooks = (state) => {
-  let filteredBooks = [];
-  if (state.filter) {
-    filteredBooks = state.data.filter((book) => {
-      return book.category === state.filter;
-    });
-  } else {
-    return state.data;
-  }
-  return filteredBooks;
-};
-
 export default booksReducer;

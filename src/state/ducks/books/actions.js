@@ -73,3 +73,15 @@ export const setViewOption = (view) => {
     payload: view,
   };
 };
+
+export const removeBook = (id, history) => {
+  return (dispatch) => {
+    axios.delete(`${apiHost}/books/${id}`).then(() => {
+      dispatch({
+        type: Actions.REMOVE_BOOK,
+        payload: id,
+      });
+      history.push("/");
+    });
+  };
+};

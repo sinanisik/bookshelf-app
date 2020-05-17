@@ -42,7 +42,6 @@ const Homepage = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state.books);
   return {
     books: state.books.data,
     loading: state.books.loading,

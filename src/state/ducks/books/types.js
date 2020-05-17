@@ -6,5 +6,5 @@ export const SET_FILTER = "SET_FILTER";
 export const SEARCH_BOOKS = "SEARCH_BOOKS";
 export const SORT_BOOKS = "SORT_BOOKS";
 export const UPDATE_BOOK = "UPDATE_BOOK";
-export const DELETE_BOOK = "DELETE_BOOK";
 export const SET_VIEW = "SET_VIEW";
+export const REMOVE_BOOK = "REMOVE_BOOK";

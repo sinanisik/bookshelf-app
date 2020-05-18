@@ -17,7 +17,6 @@ const AddBook = (props) => {
   }, []);
 
   const isEdit = props.componentProps.isEdit;
-  const id = props.routerProps.match.params.id;
   return (
     <Container>
       <Row>

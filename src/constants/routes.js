@@ -1,4 +1,3 @@
-import React from "react";
 import { Homepage, AddBook } from "../containers";
 
 const routes = [

@@ -4,8 +4,6 @@ import {
   CardImg,
   CardText,
   CardBody,
-  CardTitle,
-  CardSubtitle,
   CardLink,
   Button,
   Popover,
@@ -50,7 +48,7 @@ const Book = (props) => {
         <br />
         {props.link && (
           <CardLink>
-            <a href={props.link} target="_blank">
+            <a href={props.link} target="_blank" rel="noopener noreferrer">
               Learn More!
             </a>
           </CardLink>

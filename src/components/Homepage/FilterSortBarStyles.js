@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavbarText, InputGroup, ButtonDropdown, Container } from "reactstrap";
+import { NavbarText, InputGroup, ButtonDropdown } from "reactstrap";
 
 export const StyledNavbarText = styled(NavbarText)`
   margin-left: 15px;

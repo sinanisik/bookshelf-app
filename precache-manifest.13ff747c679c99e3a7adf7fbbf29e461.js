@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a29e1711eccd3b44d3ac44e43ea3b2c5",
+    "revision": "8f9cb65dd304b7ac1a07ec1d62f309a5",
     "url": "/bookshelf-app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookshelf-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "78c7f8b22b2b82defc69",
-    "url": "/bookshelf-app/static/css/main.aeabc570.chunk.css"
+    "revision": "a96311c1ed0d836c4c01",
+    "url": "/bookshelf-app/static/css/main.12db2f42.chunk.css"
   },
   {
     "revision": "fe393fa079c007e9f024",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookshelf-app/static/js/2.6c4c690f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78c7f8b22b2b82defc69",
+    "revision": "a96311c1ed0d836c4c01",
     "url": "/bookshelf-app/static/js/main.b611a220.chunk.js"
   },
   {

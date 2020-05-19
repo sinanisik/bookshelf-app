@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bookshelf-app/static/css/main.12db2f42.chunk.css",
+    "main.css": "/bookshelf-app/static/css/main.aeabc570.chunk.css",
     "main.js": "/bookshelf-app/static/js/main.b611a220.chunk.js",
     "main.js.map": "/bookshelf-app/static/js/main.b611a220.chunk.js.map",
     "runtime-main.js": "/bookshelf-app/static/js/runtime-main.50ccaa34.js",
@@ -9,17 +9,17 @@
     "static/js/2.6c4c690f.chunk.js": "/bookshelf-app/static/js/2.6c4c690f.chunk.js",
     "static/js/2.6c4c690f.chunk.js.map": "/bookshelf-app/static/js/2.6c4c690f.chunk.js.map",
     "index.html": "/bookshelf-app/index.html",
-    "precache-manifest.13ff747c679c99e3a7adf7fbbf29e461.js": "/bookshelf-app/precache-manifest.13ff747c679c99e3a7adf7fbbf29e461.js",
+    "precache-manifest.2de3042305c39cabf9d03bfcc6765a22.js": "/bookshelf-app/precache-manifest.2de3042305c39cabf9d03bfcc6765a22.js",
     "service-worker.js": "/bookshelf-app/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/bookshelf-app/static/css/2.de424728.chunk.css.map",
-    "static/css/main.12db2f42.chunk.css.map": "/bookshelf-app/static/css/main.12db2f42.chunk.css.map",
+    "static/css/main.aeabc570.chunk.css.map": "/bookshelf-app/static/css/main.aeabc570.chunk.css.map",
     "static/js/2.6c4c690f.chunk.js.LICENSE.txt": "/bookshelf-app/static/js/2.6c4c690f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.50ccaa34.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.6c4c690f.chunk.js",
-    "static/css/main.12db2f42.chunk.css",
+    "static/css/main.aeabc570.chunk.css",
     "static/js/main.b611a220.chunk.js"
   ]
 }

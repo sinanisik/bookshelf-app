@@ -13,7 +13,7 @@ import history from "./constants/history";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router history={history}>
+      <Router basename="/bookshelf-app" history={history}>
         <App />
       </Router>
     </Provider>

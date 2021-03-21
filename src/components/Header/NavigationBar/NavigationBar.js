@@ -5,9 +5,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
   NavLink,
-  NavbarText,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { StyledNavItem, StyledNavbarText } from "./HeaderStyles";
@@ -20,7 +18,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
+      <Navbar expand="md">
         <NavbarBrand tag={Link} to="/">
           BookShelf App
         </NavbarBrand>
